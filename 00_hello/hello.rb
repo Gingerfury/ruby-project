@@ -1,6 +1,6 @@
 #write your code here
 def hello
-  'Hello!'
+  "Hello!""
 end
 
 def greet(x)

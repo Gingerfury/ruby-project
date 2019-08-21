@@ -23,7 +23,7 @@ def first_word(input)
 end
 
 def titleize(input)
-  stop_words = %w{a an and the or for of nor over}
+  stop_words = %w{a an and the or for of nor over that}
   output = input.split.each_with_index.map{|word, index| stop_words.include?(word) && index > 0 ? word : word.capitalize }.join(" ")
   output = output[0].capitalize + output[1..input.length]
   return output
